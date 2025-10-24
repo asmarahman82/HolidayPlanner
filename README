@@ -1,0 +1,23 @@
+# HolidayPlanner
+
+✈️ **HolidayPlanner** is a Python-based travel planning assistant that generates personalized itineraries for cities worldwide. It combines live weather, local attractions, restaurants, and hotel suggestions to create a complete holiday plan based on user preferences.
+
+---
+
+## Features
+
+- **Personalized itineraries**: Generates daily schedules based on user-selected city, duration, budget, and preferences.
+- **Live weather updates**: Fetches real-time weather data for the chosen destination using the OpenWeather API.
+- **Local places**: Recommends restaurants, cafes, museums, and other points of interest using Yelp API.
+- **AI-powered text generation**: Generates detailed activity descriptions with Groq API or Hugging Face models.
+- **Budget estimation**: Simple budget overview based on user input.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/HolidayPlanner.git
+cd HolidayPlanner
