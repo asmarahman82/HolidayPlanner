@@ -1,23 +1,28 @@
-# HolidayPlanner
+# HolidayPlanner — A Multi-Agent AI System for Automated Travel Itinerary Planning
 
-✈️ **HolidayPlanner** is a Python-based travel planning assistant that generates personalized itineraries for cities worldwide. It combines live weather, local attractions, restaurants, and hotel suggestions to create a complete holiday plan based on user preferences.
+**Short description:**  
+HolidayPlanner is a multi-agent, LLM-enhanced travel planning system that produces personalized itineraries by combining live data (weather, venue listings) with AI reasoning. The project demonstrates LangGraph-based orchestration of specialized agents (input, destination, weather, budget, itinerary, result, metrics) and integrates external services including OpenWeather, Yelp, Hugging Face, and Groq.
 
----
 
-## Features
+## Project Overview
+HolidayPlanner accepts user-provided destination, budget, duration and preferences, then orchestrates a team of agents to fetch real-time weather and local places, estimate budget feasibility, and generate a day-by-day itinerary with human-readable summaries. The project is designed for reproducibility and modular extension.
 
-- **Personalized itineraries**: Generates daily schedules based on user-selected city, duration, budget, and preferences.
-- **Live weather updates**: Fetches real-time weather data for the chosen destination using the OpenWeather API.
-- **Local places**: Recommends restaurants, cafes, museums, and other points of interest using Yelp API.
-- **AI-powered text generation**: Generates detailed activity descriptions with Groq API or Hugging Face models.
-- **Budget estimation**: Simple budget overview based on user input.
 
----
+## Key Features
+- Multi-agent orchestration using **LangGraph**
+- Live weather integration (OpenWeather)
+- Local places and ratings (Yelp)
+- LLM-based itinerary generation (Hugging Face / Groq)
+- Clear modular architecture for extensibility and testing
+- CLI execution for Module 2 reproducibility; streamlit UI planned in Module 3
+- Logging and basic metrics capture for observability
 
-## Installation
 
-1. Clone the repository:
-
+## Quick Demo (CLI)
 ```bash
-git clone https://github.com/YOUR_USERNAME/HolidayPlanner.git
-cd HolidayPlanner
+python main.py
+# Follow the prompts:
+# Enter destination: Jeddah
+# Enter budget (USD): 1500
+# Enter preferences (comma-separated): beaches,culture
+
